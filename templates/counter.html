@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block links %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style-counter.css">
+    {% endblock %}
+
+{% block title %}
+    Counter
+{% endblock %}
+
+{% block main %}
+<div class="counter-container">
+    <div id="counter-1" class="counter">
+      <h2 contenteditable="true" class="counter-title">✎Counter</h2>
+      <h1 id="count-text-1" class="counter-number">0</h1>
+      <div class="button-container">
+        <button id="minus-1" class="button minus">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+            <line class="minus-sign" x1="25.5" y1="69.5" x2="75.5" y2="69.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+            <path class="down-arrow" d="M75 50L50 90L25 50" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button id="plus-1" class="button plus">
+          <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+            <g class="plus-sign">
+              <line x1="25.5" y1="69.5" x2="75.5" y2="69.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+              <line x1="49.5" y1="96.5" x2="49.5" y2="46.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+            </g>
+            <path class="up-arrow" d="M25 90L50 50L75 90" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <button id="copy-1" class="copy-count"><img src="../static/copy-icon.png" alt="copy"></button>
+    </div>
+    <div id="counter-2" class="counter">
+      <h2 contenteditable="true" class="counter-title">✎Counter</h2>
+      <h1 id="count-text-2" class="counter-number">0</h1>
+      <div class="button-container">
+        <button id="minus-2" class="button minus">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+              <line class="minus-sign" x1="25.5" y1="69.5" x2="75.5" y2="69.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+              <path class="down-arrow" d="M75 50L50 90L25 50" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <button id="plus-2"class="button plus">
+          <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+            <g class="plus-sign">
+              <line x1="25.5" y1="69.5" x2="75.5" y2="69.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+              <line x1="49.5" y1="96.5" x2="49.5" y2="46.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+            </g>
+            <path class="up-arrow" d="M25 90L50 50L75 90" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <button id="copy-2" class="copy-count"><img src="../static/copy-icon.png" alt="copy"></button>
+    </div>
+    <div id="counter-3" class="counter">
+      <h2 contenteditable="true" class="counter-title">✎Counter</h2>
+      <h1 id="count-text-3" class="counter-number">0</h1>
+      <div class="button-container">
+        <button id="minus-3" class="button minus">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+            <line class="minus-sign" x1="25.5" y1="69.5" x2="75.5" y2="69.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+            <path class="down-arrow" d="M75 50L50 90L25 50" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button id="plus-3" class="button plus">
+          <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+            <g class="plus-sign">
+              <line x1="25.5" y1="69.5" x2="75.5" y2="69.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+              <line x1="49.5" y1="96.5" x2="49.5" y2="46.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+            </g>
+            <path class="up-arrow" d="M25 90L50 50L75 90" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <button id="copy-3" class="copy-count"><img src="../static/copy-icon.png" alt="copy"></button>
+    </div>
+</div>
+<script src="../static/counter.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+{% endblock %}
