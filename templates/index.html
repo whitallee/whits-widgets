@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block links %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style.css">
+{% endblock %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+  <div class="container">
+      <div id="widgets-container" class="row justify-content-between align-middle">
+          <div class="col icon-container">
+              <a href="/timer"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/481/481781.png" alt="Stopwatch"></a>
+          </div>
+          <div class="col icon-container">
+              <a href="/counter"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/7207/7207766.png" alt="Counter"></a>
+          </div>
+          <div class="col icon-container">
+              <a href="/mail"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/2989/2989993.png" alt="Email Me"></a>
+          </div>
+      </div>
+  </div>
+{% endblock %}
