@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,4 +32,39 @@
         {% block main %}{% endblock %}
     </main>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block links %}{% endblock %}
+    <title>Whit's Widgets: {% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="/">Whit's Widgets</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/timer">Stopwatch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/counter">Counter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/mail">Email Me</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+</body>
+>>>>>>> 064d5ec30a537a1da428d256f6d8ffd9d56f3700
 </html>

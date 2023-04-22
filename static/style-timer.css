@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1, h2 {
     margin: 0;
 	padding: 0;
@@ -151,4 +152,159 @@ body {
 #sw-reset:hover {
   transform: rotate(360deg);
   opacity: 100%
+=======
+h1, h2 {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+:root {
+    --clr-dark: #424242;
+    --clr-dark-purple: #230046;
+    --clr-light-purple: #320064;
+
+    --ff-josefin: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background: var(--clr-dark);
+    color: white;
+    font-family: var(--ff-josefin);
+}
+
+.timer-container {
+    width: 100%;
+    height: calc(100vh - 56px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.timer {
+  padding: 2rem;
+  outline: solid 2px var(--clr-light-purple);
+  border-radius: 1rem;
+  background: linear-gradient(var(--clr-light-purple), var(--clr-dark-purple));
+  width: 500px;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .timer {
+    width: 300px;
+  }
+}
+
+.clock-title {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 3rem;
+}
+
+.clock-time {
+  font-weight: 400;
+  font-size: 4rem;
+  font-family: 'Share Tech Mono', monospace;
+
+}
+
+#sw-milliseconds {
+  font-size: 3rem;
+  opacity: 70%;
+}
+
+.button {
+  border: none;
+  border-radius: 100vw;
+  margin: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.sw-stop {
+  box-shadow: 0 0 1.5rem 0.5rem red;
+}
+
+#sw-reset {
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  opacity: 50%;
+  transition: all 1s ease;
+}
+
+#sw-reset img {
+  filter: invert(1);
+}
+
+#sw-reset:hover {
+  transform: rotate(360deg);
+  opacity: 100%
+>>>>>>> 064d5ec30a537a1da428d256f6d8ffd9d56f3700
 }
